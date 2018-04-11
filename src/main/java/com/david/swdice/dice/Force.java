@@ -1,12 +1,12 @@
 package com.david.swdice.dice;
 
-import com.david.swdice.DiceResult;
+import com.david.swdice.results.ForceResult;
 
 public class Force extends Die {
 	@Override
-	public DiceResult roll() {
+	public ForceResult roll() {
 		int roll = random.nextInt(12);
-		DiceResult result = new DiceResult();
+		ForceResult result = new ForceResult();
 
 		switch (roll) {
 			case 0: // Dark

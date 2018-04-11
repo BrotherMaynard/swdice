@@ -1,12 +1,12 @@
 package com.david.swdice.dice;
 
-import com.david.swdice.DiceResult;
+import com.david.swdice.results.BadResult;
 
 public class Setback extends Die {
 	@Override
-	public DiceResult roll() {
+	public BadResult roll() {
 		int roll = random.nextInt(6);
-		DiceResult result = new DiceResult();
+		BadResult result = new BadResult();
 
 		switch (roll) {
 			case 0: // Blank

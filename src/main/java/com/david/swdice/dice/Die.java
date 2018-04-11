@@ -1,6 +1,6 @@
 package com.david.swdice.dice;
 
-import com.david.swdice.DiceResult;
+import com.david.swdice.results.DiceResult;
 
 import java.util.Random;
 

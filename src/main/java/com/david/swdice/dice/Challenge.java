@@ -1,12 +1,12 @@
 package com.david.swdice.dice;
 
-import com.david.swdice.DiceResult;
+import com.david.swdice.results.BadResult;
 
 public class Challenge extends Die {
 	@Override
-	public DiceResult roll() {
+	public BadResult roll() {
 		int roll = random.nextInt(12);
-		DiceResult result = new DiceResult();
+		BadResult result = new BadResult();
 
 		switch (roll) {
 			case 0: // Blank

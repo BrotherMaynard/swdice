@@ -8,6 +8,7 @@ import com.david.swdice.dice.Difficulty;
 import com.david.swdice.dice.Force;
 import com.david.swdice.dice.Proficiency;
 import com.david.swdice.dice.Setback;
+import com.david.swdice.results.RollResult;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ import java.util.stream.Stream;
 
 @Component
 public class DiceRollingService {
-	public DiceResult roll(RollDefinition rollDefinition) {
+	public RollResult roll(RollDefinition rollDefinition) {
 		List<Die> dice = new ArrayList<>();
 
 		dice.addAll(Stream.generate(Boost::new).limit(rollDefinition.getBoost()).collect(Collectors.toList()));
@@ -30,6 +31,8 @@ public class DiceRollingService {
 
 		dice.addAll(Stream.generate(Force::new).limit(rollDefinition.getForce()).collect(Collectors.toList()));
 
-		return dice.stream().map(Die::roll).reduce(DiceResult::combine).orElseGet(DiceResult::new);
+		RollResult result = new RollResult();
+		dice.stream().map(Die::roll).forEach(result::addDiceResult);
+		return result;
 	}
 }

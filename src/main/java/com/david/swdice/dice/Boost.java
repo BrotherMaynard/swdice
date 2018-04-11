@@ -1,12 +1,12 @@
 package com.david.swdice.dice;
 
-import com.david.swdice.DiceResult;
+import com.david.swdice.results.GoodResult;
 
 public class Boost extends Die {
 	@Override
-	public DiceResult roll() {
+	public GoodResult roll() {
 		int roll = random.nextInt(6);
-		DiceResult result = new DiceResult();
+		GoodResult result = new GoodResult();
 
 		switch (roll) {
 			case 0: // Blank
