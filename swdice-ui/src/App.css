@@ -1,1 +1,7 @@
-/* Nothing to see here... */
+.sw-dice-app {
+	background-color: black;
+}
+
+.title, footer {
+	color: yellow;
+}

@@ -1,0 +1,31 @@
+.die-select {
+	background-color: grey;
+}
+
+.die-boost {
+	background-color: darkturquoise;
+}
+
+.die-ability {
+	background-color: green;
+}
+
+.die-proficiency {
+	background-color: yellow;
+}
+
+.die-setback {
+	background-color: black;
+}
+
+.die-difficulty {
+	background-color: purple;
+}
+
+.die-challenge {
+	background-color: red;
+}
+
+.die-force {
+	background-color: white;
+}

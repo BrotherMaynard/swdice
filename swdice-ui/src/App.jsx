@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Selector from "./selector/Selector";
 import RollArea from "./roll-area/RollArea";
 import Results from "./results/Results";
-import Help from "Help";
+import Help from "./Help";
 
 import "./App.css";
 
