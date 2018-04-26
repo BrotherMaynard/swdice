@@ -1,6 +1,5 @@
 package com.david.swdice.results;
 
-import com.david.swdice.TotalResult;
 import lombok.Data;
 
 import java.util.ArrayList;

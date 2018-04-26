@@ -1,4 +1,4 @@
-package com.david.swdice;
+package com.david.swdice.results;
 
 import lombok.Data;
 
