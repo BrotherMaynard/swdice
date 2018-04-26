@@ -11,7 +11,7 @@ public class BadResult extends DiceResult {
 	private long failure;
 	private long despair;
 
-	public BadResult() {
-		super(DiceType.BAD);
+	public BadResult(long seed) {
+		super(DiceType.BAD, seed);
 	}
 }

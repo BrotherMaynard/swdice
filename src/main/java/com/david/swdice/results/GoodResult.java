@@ -11,7 +11,7 @@ public class GoodResult extends DiceResult {
 	private long success;
 	private long triumph;
 
-	public GoodResult() {
-		super(DiceType.GOOD);
+	public GoodResult(long seed) {
+		super(DiceType.GOOD, seed);
 	}
 }

@@ -3,10 +3,18 @@ package com.david.swdice.dice;
 import com.david.swdice.results.GoodResult;
 
 public class Ability extends Die {
+	public Ability() {
+		super();
+	}
+
+	public Ability(Long seed) {
+		super(seed);
+	}
+
 	@Override
 	public GoodResult roll() {
 		int roll = random.nextInt(8);
-		GoodResult result = new GoodResult();
+		GoodResult result = new GoodResult(seed);
 
 		switch (roll) {
 			case 0: // Blank

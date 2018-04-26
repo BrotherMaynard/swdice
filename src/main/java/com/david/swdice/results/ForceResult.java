@@ -10,7 +10,7 @@ public class ForceResult extends DiceResult {
 	private long light;
 	private long dark;
 
-	public ForceResult() {
-		super(DiceType.FORCE);
+	public ForceResult(long seed) {
+		super(DiceType.FORCE, seed);
 	}
 }

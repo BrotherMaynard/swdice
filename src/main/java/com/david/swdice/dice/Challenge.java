@@ -3,10 +3,18 @@ package com.david.swdice.dice;
 import com.david.swdice.results.BadResult;
 
 public class Challenge extends Die {
+	public Challenge() {
+		super();
+	}
+
+	public Challenge(Long seed) {
+		super(seed);
+	}
+
 	@Override
 	public BadResult roll() {
 		int roll = random.nextInt(12);
-		BadResult result = new BadResult();
+		BadResult result = new BadResult(seed);
 
 		switch (roll) {
 			case 0: // Blank

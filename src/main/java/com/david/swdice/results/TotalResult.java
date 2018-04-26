@@ -14,4 +14,6 @@ public class TotalResult {
 
 	private long light;
 	private long dark;
+
+	private long seed;
 }

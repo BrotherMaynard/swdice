@@ -8,4 +8,5 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class DiceResult {
 	private final DiceType type;
+	private final long seed;
 }

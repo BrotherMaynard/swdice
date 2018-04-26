@@ -13,4 +13,6 @@ public class RollDefinition {
 	private long challenge;
 
 	private long force;
+
+	private Long seed;
 }

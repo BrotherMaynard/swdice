@@ -3,10 +3,18 @@ package com.david.swdice.dice;
 import com.david.swdice.results.ForceResult;
 
 public class Force extends Die {
+	public Force() {
+		super();
+	}
+
+	public Force(Long seed) {
+		super(seed);
+	}
+
 	@Override
 	public ForceResult roll() {
 		int roll = random.nextInt(12);
-		ForceResult result = new ForceResult();
+		ForceResult result = new ForceResult(seed);
 
 		switch (roll) {
 			case 0: // Dark
