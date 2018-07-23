@@ -1,6 +1,7 @@
 package com.david.swdice.dice;
 
 import com.david.swdice.results.GoodResult;
+import com.david.swdice.results.Result;
 
 public class Boost extends Die {
 	public Boost() {
@@ -22,16 +23,22 @@ public class Boost extends Die {
 				break;
 			case 2: // Success
 				result.setSuccess(1);
+				result.getResults().add(Result.SUCCESS);
 				break;
 			case 3: // Success Advantage
 				result.setAdvantage(1);
 				result.setSuccess(1);
+				result.getResults().add(Result.ADVANTAGE);
+				result.getResults().add(Result.SUCCESS);
 				break;
 			case 4: // Two Advantage
 				result.setAdvantage(2);
+				result.getResults().add(Result.ADVANTAGE);
+				result.getResults().add(Result.ADVANTAGE);
 				break;
 			default: // Advantage
 				result.setAdvantage(1);
+				result.getResults().add(Result.ADVANTAGE);
 				break;
 		}
 

@@ -1,7 +1,7 @@
 package com.david.swdice;
 
 import com.david.swdice.results.BadResult;
-import com.david.swdice.results.DiceResult;
+import com.david.swdice.results.DieResult;
 import com.david.swdice.results.ForceResult;
 import com.david.swdice.results.GoodResult;
 import com.david.swdice.results.RollResult;
@@ -33,7 +33,7 @@ public class DiceRollingServiceTests {
 
 		RollResult result = diceRollingService.roll(definition);
 
-		List<DiceResult> results = result.getResults();
+		List<DieResult> results = result.getResults();
 		assertEquals(7, results.size());
 		assertEquals(3, results.stream().filter(r -> r instanceof GoodResult).count());
 		assertEquals(3, results.stream().filter(r -> r instanceof BadResult).count());

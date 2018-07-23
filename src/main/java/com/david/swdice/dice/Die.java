@@ -1,6 +1,6 @@
 package com.david.swdice.dice;
 
-import com.david.swdice.results.DiceResult;
+import com.david.swdice.results.DieResult;
 
 import java.util.Random;
 
@@ -19,5 +19,5 @@ public abstract class Die {
 		this.random = new Random(seed);
 	}
 
-	public abstract DiceResult roll();
+	public abstract DieResult roll();
 }

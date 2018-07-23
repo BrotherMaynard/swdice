@@ -1,17 +1,17 @@
 package com.david.swdice.results;
 
-import com.david.swdice.dice.DiceType;
+import com.david.swdice.dice.DieType;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class GoodResult extends DiceResult {
+public class GoodResult extends DieResult {
 	private long advantage;
 	private long success;
 	private long triumph;
 
 	public GoodResult(long seed) {
-		super(DiceType.GOOD, seed);
+		super(DieType.GOOD, seed);
 	}
 }

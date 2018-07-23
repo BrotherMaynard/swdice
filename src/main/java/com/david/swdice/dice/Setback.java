@@ -1,6 +1,7 @@
 package com.david.swdice.dice;
 
 import com.david.swdice.results.BadResult;
+import com.david.swdice.results.Result;
 
 public class Setback extends Die {
 	public Setback() {
@@ -23,10 +24,12 @@ public class Setback extends Die {
 			case 2: // Failure
 			case 3: // Failure
 				result.setFailure(1);
+				result.getResults().add(Result.FAILURE);
 				break;
 			case 4: // Threat
 			default: // Threat
 				result.setThreat(1);
+				result.getResults().add(Result.THREAT);
 				break;
 		}
 

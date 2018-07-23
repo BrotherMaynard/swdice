@@ -1,6 +1,6 @@
 package com.david.swdice.dice;
 
-public enum DiceType {
+public enum DieType {
 	GOOD,
 	BAD,
 	FORCE

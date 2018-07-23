@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class TotalResult {
+	// TODO: Use AtomicInteger.getAndIncrement()?
 	private long advantage;
 	private long success;
 	private long triumph;
